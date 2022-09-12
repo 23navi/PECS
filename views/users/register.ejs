@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="wrapper">
+
+    <div class="loginContainer">
+        <h1>Register</h1>
+        <% if(payload.error){%>
+            <h3><%=payload.error%></h3>
+        <%}%>
+        
+        <form id="registerForm" method="POST" class="validated-form" novalidate>
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name" value= "<%=payload.firstName%>" required/>
+          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name" value= "<%=payload.lastName%>" required/>
+          <input type="text" class="form-control" name="username" id="username" placeholder="Username" value= "<%=payload.username%>" required/>
+          <input id="password"  type="password" class="form-control" id="password" name="password" placeholder="Password" value= "<%=payload.password%>" required/>
+          <input type="submit" value="Register"/>
+        </form>
+        <a href="/login">Already have an account? Login here.</a>
+      </div>
+
+</div>
+

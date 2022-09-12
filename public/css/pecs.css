@@ -1,0 +1,21 @@
+body{
+	padding-top: 10px;
+	background-color: #2C3E50;
+}
+
+
+.navbar-inverse{
+	background-color: #2C3E50;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+	color:lightblue;
+}
+
+.user{
+	color:wheat;
+	flex:1;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
